@@ -1,0 +1,18 @@
+@media (max-width:1115px) {
+    .registrationImg{
+        display: none;
+    }
+}
+.home_email-id{
+    height: fit-content;
+}
+table, tr td, th{
+    border: 1px solid black;
+}
+
+.table1{
+    width: 100%;
+}
+.tableBody{
+    text-align: center;
+}

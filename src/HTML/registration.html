@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In Page</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" >E-learning</a>
+    </div>
+  </nav>  
+    <div class="container-fluid mt-3">
+      <div class="row d-flex justify-content-center align-items-center">
+            <div class="row p-0">
+              <div class="col-xl-6 d-flex ">
+                <img src="https://media.istockphoto.com/id/1030355148/vector/man-hold-registration-clipboard-with-checklist-man-hold-in-hand-clipboard-agreement-flat.jpg?s=1024x1024&w=is&k=20&c=8iWOzVZPuWUQ0CBtoe4cbhx_42baJDJ_rkl2tEck7a8="
+                  alt="Sample photo" class="img-fluid registrationImg"/>
+              </div>
+              <div class="col-xl-6">
+                <form action="#" onsubmit="registration(event)">
+                    <div class="p-2 pt-5" >
+                        <h3 class="mb-5">Registration form</h3>
+                        <div class="row mb-4">
+                           <div class="col-6">
+                            <input type="text" id="firstname" name="firstname" class="form-control" oninput="regisusername(firstname)" required/>
+                            <label class="form-label" for="fullname">First Name</label>
+                           </div>
+                           <div class="col-6">
+                            <input type="text" id="lastname" name="lastname" class="form-control" oninput="regisusername(lastname)" required/>
+                            <label class="form-label" for="fullname">Last Name</label>
+                           </div>
+                        </div>
+                        <div class="mb-4">
+                          <input type="email" id="EmailId" name="EmailId" class="form-control" oninput="loginusername(EmailId)" required/>
+                          <label class="form-label" for="Email-Id">Email ID</label>
+                        </div>
+                        <div class="mb-4">
+                          <input type="password" id="password" name="password" class="form-control" minlength="8"  required/>
+                          <label class="form-label" for="pas">Password</label>
+                        </div>
+                        <div class="mb-4">
+                          <input type="text" id="Address" name="Address" class="form-control" required/>
+                          <label class="form-label" for="Address">Address</label>
+                        </div>
+                        <div class="d-md-flex mb-4">
+                          <h6 class="mb-0 me-4">Gender: </h6>
+                          <div class=" mb-0 me-4">
+                            <input class="form-check-input" type="radio" name="Gender" id="femaleGender"
+                              value="Female" required/>
+                            <label class="form-check-label" for="femaleGender">Female</label>
+                          </div>
+                          <div class=" mb-0 me-4">
+                            <input class="form-check-input" type="radio" name="Gender" id="maleGender"
+                              value="Male" required/>
+                            <label class="form-check-label" for="maleGender">Male</label>
+                          </div>         
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <select class="select p-1 w-75 form-control" name="State">
+                              <option value="State">State</option>
+                              <option value="Rajasthan">Rajasthan</option>
+                              <option value="Dehli">Dehli</option>
+                              <option value="UP">UP</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <select class="select p-1 w-75 form-control" name="State">
+                              <option value="City">City</option>
+                              <option value="Jaipur">Jaipur</option>
+                              <option value="Sikar">Sikar</option>
+                              <option value="Jhunjhunu">Jhunjhunu</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="mb-4">
+                          <input type="date" id="DOB" name="DOB" class="form-control" required/>
+                          <label class="form-label" for="DOB">Date of Birth</label>
+                        </div>
+                        <div class="mb-4">
+                          <input type="number" id="Pincode" name="Pincode" class="form-control" minlength="6" maxlength="6"  required/>
+                          <label class="form-label" for="Pincode">Pincode</label>
+                        </div>
+          
+                        <div class="mb-4">
+                          <input type="text" id="Course" name="Course" class="form-control" required/>
+                          <label class="form-label" for="Course">Course</label>
+                        </div>
+                        <div class="d-flex justify-content-end pt-3">
+                          <input type="button" value="Log-In" name="Log-In" class="btn btn-success btn-lg ms-2" onclick="window.location='login.html';">
+                          <input type="reset" class="btn btn-primary btn-lg ms-2" name="reset" value="Reset All" >
+                          <input type="submit" class="btn btn-primary btn-lg ms-2" name="submit" value="Submit Form">
+                        </div>
+                    </div>
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JavaScript/index.js"></script>
+</body>
+</html>
